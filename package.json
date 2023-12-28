@@ -1,0 +1,23 @@
+{
+  "name": "api_one_piece",
+  "version": "1.0.0",
+  "description": "one piece api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedrohelias/api_one_piece.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedrohelias/api_one_piece/issues"
+  },
+  "homepage": "https://github.com/pedrohelias/api_one_piece#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.6.3"
+  }
+}
