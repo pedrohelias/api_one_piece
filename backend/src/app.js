@@ -4,6 +4,7 @@ const router = require("./router") //vai chamar o arquivo router que criamos
 
 
 const app = express()
+app.use(express.json())
 //é necessário dizer ao app para utilizar o router, para isso:
 app.use(router)//toda requisicação vai cair no router, e dentro do router as rotas vão preparar a solucação
 

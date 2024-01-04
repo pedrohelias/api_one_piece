@@ -3,8 +3,8 @@ const router = express.Router()
 const models = require("./models/cardsModel")
 const cardsController = require("./controllers/cardsController")
 
-router.get("/cards", cardsController.getAll)
-router.get("cardsFind", models.getAll)
+router.get("/cards", models.getAll)
+router.post("/addCards", models.addCard)
 
 
 
