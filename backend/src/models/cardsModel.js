@@ -18,7 +18,8 @@ const addCard = async(req,res) => {
         power: req.body.power,
         type: req.body.type,
         description: req.body.description,
-        image_url: req.body.image_url
+        image_url: req.body.image_url,
+        new_role: req.body.new_role
 })
 
     await card.save()
@@ -32,7 +33,8 @@ const updateCard = async(req,res) => {
         power: req.body.power,
         type: req.body.type,
         description: req.body.description,
-        image_url: req.body.image_url
+        image_url: req.body.image_url,
+        new_role: req.body.new_role
     }, {
         new: true //pega a ultima instancia editada 
     })  
