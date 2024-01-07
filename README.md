@@ -11,3 +11,6 @@
 - criar uma parte que separe as rotas da nossa aplicação, também é uma excelente ideia. O Router é como se fosse um pedaço do app
 - criar uma pasta com arquivos e funções que acessam o banco de dados é uma boa escolha também - models
 - atualmente(ver data deste commit), o mongo está funcionando corretamente em uma versão específica de sua lib, 7.6.3. Portanto, utilizar ```npm install mongoose@7.6.3```
+- iniciar um projeto em react: ```npx create-react-app nome_do_app```
+- rodar o frontend: ```npm start```
+- instalar o react-router-dom: ```npm install react-router-dom```
