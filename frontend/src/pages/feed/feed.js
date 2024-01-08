@@ -1,14 +1,19 @@
 import React from "react"
 import {Link} from "react-router-dom"
+import "./style.css"
+import Header from "../../components/header/header"
 
 function Feed() {
     return (
-        <div>
-            <h1>Page Feed</h1>
+        <div className="pagina">
+        
+            {/* <h1>Page Feed</h1>
 
             <Link to="/create">
                 <button>Criar Carta</button>
-            </Link>
+            </Link> */}
+
+           <Header></Header>
         </div>
     )
 }

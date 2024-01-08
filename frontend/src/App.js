@@ -1,7 +1,7 @@
 import React from "react"
 import Create from "./pages/create"
 import Edit from "./pages/edit"
-import Feed from "./pages/feed"
+import Feed from "./pages/feed/feed"
 import ReadMore from "./pages/readMore"
 
 //aqui vamos chamar nossas rotas
