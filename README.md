@@ -14,3 +14,5 @@
 - iniciar um projeto em react: ```npx create-react-app nome_do_app```
 - rodar o frontend: ```npm start```
 - instalar o react-router-dom: ```npm install react-router-dom```
+- instalar o normalizador de css (css reset): ```npm install normalize.css```, depois importar no código utilizando ""import 'normalize.css'"
+"

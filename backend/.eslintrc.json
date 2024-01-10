@@ -25,5 +25,7 @@
             "error",
             "never"
         ]
-    }
+    },
+    "css.lint.unknownAtRules": "ignore"
+
 }
