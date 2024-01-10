@@ -15,6 +15,13 @@ function Feed() {
             </Link> */}
 
            <Header></Header>
+
+           <div className="createCard">
+                <Link to={"/create"}>
+                    <button className="buttonCreate">Criar carta</button>
+                </Link>
+
+            </div>
         </div>
     )
 }

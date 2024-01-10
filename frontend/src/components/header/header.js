@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import 'normalize.css' //importar o normalizador que vai dar reset no css
 import "./style.css"
 
+
 function Header() {
     return (
         <header>
@@ -10,14 +11,19 @@ function Header() {
                 <div className="title">
                     <h1>Aplicação Teste</h1>
                 </div>
-                <div className="createCard">
-                    <Link to={"/create"}>
-                        <button>Criar carta</button>
-                    </Link>
+                
+                <div className="menu">
+                    <ul>
+                        <li>Feed</li>
+                        <li>Pagina 2</li>
+                        <li>Pagina 3</li>
+                    </ul>
 
                 </div>
+                
             </div>
         </header>
+        
     )
 }
 
