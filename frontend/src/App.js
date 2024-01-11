@@ -1,5 +1,5 @@
 import React from "react"
-import Create from "./pages/create"
+import Create from "./pages/create/create"
 import Edit from "./pages/edit"
 import Feed from "./pages/feed/feed"
 import ReadMore from "./pages/readMore"
