@@ -1,0 +1,29 @@
+@import-normalize;
+
+header {
+    background-color: #F8F0E5;
+    position: relative;
+}
+
+.title{
+    padding-top: 1px;
+    padding-bottom: 10px;
+}
+
+.menu{
+    position: absolute;
+    right: 50px;
+    bottom: 0px;
+}
+
+.menu ul {
+    
+}
+
+.menu li {
+    display: inline;
+    border: 1px solid black;
+    margin-right: 10px;
+    
+
+}
