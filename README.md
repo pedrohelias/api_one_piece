@@ -16,3 +16,6 @@
 - instalar o react-router-dom: ```npm install react-router-dom```
 - instalar o normalizador de css (css reset): ```npm install normalize.css```, depois importar no código utilizando ""import 'normalize.css'"
 "
+- instalar o criador de formulario com React-Hook-Form com ```npm install react-hook-form```. 
+- instalar axios (trabalhar com as requisições): ```npm install axios```
+- instalar cors para resolver os problemas de urls diferentes entre rotas de uma aplicação, ```npm i cors```. IMPORTANTE: Definir o uso pelo app.use() dele antes de declarar que a aplicação está usando as rotas com app.use(routes)
