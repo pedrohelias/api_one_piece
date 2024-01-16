@@ -14,9 +14,9 @@ function Feed() {
                 <button>Criar Carta</button>
             </Link> */}
 
-           <Header></Header>
-
-           <div className="createCard">
+            <Header></Header>
+            <h1>Page Feed</h1>
+            <div className="createCard">
                 <Link to={"/create"}>
                     <button className="buttonCreate">Criar carta</button>
                 </Link>
