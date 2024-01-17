@@ -4,13 +4,17 @@ import "./style.css"
 import Header from "../../components/header/header"
 import {useForm} from "react-hook-form"
 import axios from "axios"
+import {useNavigate} from "react-router-dom"
 
 
 function Create() {
 
+    const history = useNavigate()
     const {register, handleSubmit} = useForm()
     const onSubmit = data => axios.post("http://localhost:8000/addCards", data).then(()=>{
         console.log("deu tudo certo")
+        history("/") //vai fazer voltar pra pagina inicial
+
     }).catch(()=>{
         console.log("deu tudo errado")
     })
@@ -19,7 +23,7 @@ function Create() {
         <div>
             <Header></Header>            
             <main>
-                <div className="card-post">
+                <div className="card-post"> 
                     <h1>Criar Postagem</h1>
                     <div className="card-body-post">
                         <form onSubmit={handleSubmit(onSubmit)}>
