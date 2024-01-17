@@ -1,11 +1,27 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import {Link} from "react-router-dom"
 import 'normalize.css'
 import "./style.css"
 import Header from "../../components/header/header"
+import axios from "axios"
 
 function Feed() {
+    const [cards, setCards] = useState([])
+
+    useEffect(() => {
+        //renderizar apos o componente aparecer na tela
+        axios.get("http://localhost:8000/cards").then((response)=>{
+            setCards(response.data) //vai mostrar os dados na tela
+        }).catch(()=>{
+            console.log("Deu errado")
+        }) //realizar apenas quando o componente aparecer na tela
+    }, [])
+
+
     return (
+
+
+
         <div className="pagina">
         
             {/* <h1>Page Feed</h1>
@@ -20,6 +36,22 @@ function Feed() {
                 <Link to={"/create"}>
                     <button className="buttonCreate">Criar carta</button>
                 </Link>
+            
+            {cards.map((card,key) => {
+               return (
+                <div>
+                    <hr></hr>
+                    <h3>custo: {card.cost}</h3>
+                    <h3>descrição: {card.description}</h3>
+                    <h3>imagem: {card.image_url}</h3>
+                    <h3>nome: {card.name}</h3>
+                    <h3>teste: {card.new_role}</h3>
+                    <h3>força: {card.power}</h3>
+                    <h3>tipo: {card.type}</h3>
+                   
+                </div>
+               )
+            })}
 
             </div>
         </div>
