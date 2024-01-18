@@ -47,8 +47,10 @@ const deleteCard = async(req,res) => {
     return res.send(cardDel)
 }
 
-
- 
+const searchCard = async(req,res) => {
+    const cardEsp = await Card.findById(req.params.id)
+    return res.send(cardEsp)
+}
 
 
 
@@ -56,5 +58,6 @@ module.exports = {
     getAll,
     addCard,
     deleteCard,
-    updateCard
+    updateCard,
+    searchCard
  }; //para enviar todas as funções dentro de um mesmo arquivo, se utiliza esse modelo

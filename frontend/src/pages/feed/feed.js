@@ -39,7 +39,7 @@ function Feed() {
             
             {cards.map((card,key) => {
                return (
-                <div>
+                <div className="categorias">
                     <hr></hr>
                     <h3>custo: {card.cost}</h3>
                     <h3>descrição: {card.description}</h3>
@@ -48,6 +48,17 @@ function Feed() {
                     <h3>teste: {card.new_role}</h3>
                     <h3>força: {card.power}</h3>
                     <h3>tipo: {card.type}</h3>
+
+                    <div className="buttons">
+                        <div className="buttonEdit">
+                            <Link to={{pathname: `/edit/${card._id}`}}>
+                            <button>Edit</button>
+                            </Link>
+                        </div>
+                        <div className="buttonDelete">
+                           <button>Delete</button> 
+                        </div>
+                    </div>
                    
                 </div>
                )
