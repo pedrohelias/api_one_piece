@@ -17,6 +17,11 @@ function Feed() {
         }) //realizar apenas quando o componente aparecer na tela
     }, [])
 
+    function deletePost(id){
+        axios.delete(`http://localhost:8000/deleteCard/${id}`)
+        setCards(cards.filter(card => card._id !== id))
+    }
+
 
     return (
 
@@ -56,7 +61,9 @@ function Feed() {
                             </Link>
                         </div>
                         <div className="buttonDelete">
-                           <button>Delete</button> 
+                           <button onClick={() => {
+                            deletePost(card._id)
+                           }}>Delete</button> 
                         </div>
                     </div>
                    
